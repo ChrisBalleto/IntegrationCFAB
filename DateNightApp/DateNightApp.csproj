@@ -196,10 +196,6 @@
     <Compile Include="Migrations\201702061730190_DatesAndResturants.Designer.cs">
       <DependentUpon>201702061730190_DatesAndResturants.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201702061815391_frankschanges.cs" />
-    <Compile Include="Migrations\201702061815391_frankschanges.Designer.cs">
-      <DependentUpon>201702061815391_frankschanges.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\201702061951359_SeedUsers.cs" />
     <Compile Include="Migrations\201702061951359_SeedUsers.Designer.cs">
       <DependentUpon>201702061951359_SeedUsers.cs</DependentUpon>
@@ -268,10 +264,10 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Date\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Date\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -290,9 +286,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702061730190_DatesAndResturants.resx">
       <DependentUpon>201702061730190_DatesAndResturants.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702061815391_frankschanges.resx">
-      <DependentUpon>201702061815391_frankschanges.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702061951359_SeedUsers.resx">
       <DependentUpon>201702061951359_SeedUsers.cs</DependentUpon>
