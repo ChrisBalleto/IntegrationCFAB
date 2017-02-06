@@ -196,10 +196,6 @@
     <Compile Include="Migrations\201702061730190_DatesAndResturants.Designer.cs">
       <DependentUpon>201702061730190_DatesAndResturants.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201702061815391_frankschanges.cs" />
-    <Compile Include="Migrations\201702061815391_frankschanges.Designer.cs">
-      <DependentUpon>201702061815391_frankschanges.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\201702061951359_SeedUsers.cs" />
     <Compile Include="Migrations\201702061951359_SeedUsers.Designer.cs">
       <DependentUpon>201702061951359_SeedUsers.cs</DependentUpon>
@@ -290,9 +286,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702061730190_DatesAndResturants.resx">
       <DependentUpon>201702061730190_DatesAndResturants.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702061815391_frankschanges.resx">
-      <DependentUpon>201702061815391_frankschanges.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702061951359_SeedUsers.resx">
       <DependentUpon>201702061951359_SeedUsers.cs</DependentUpon>
