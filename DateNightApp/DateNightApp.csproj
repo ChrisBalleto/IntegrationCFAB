@@ -290,13 +290,10 @@
     <EmbeddedResource Include="Migrations\201702061730190_DatesAndResturants.resx">
       <DependentUpon>201702061730190_DatesAndResturants.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD:DateNightApp/DateNightApp/DateNightApp.csproj
     <EmbeddedResource Include="Migrations\201702061815391_frankschanges.resx">
       <DependentUpon>201702061815391_frankschanges.cs</DependentUpon>
-=======
     <EmbeddedResource Include="Migrations\201702061951359_SeedUsers.resx">
       <DependentUpon>201702061951359_SeedUsers.cs</DependentUpon>
->>>>>>> edfc906f2fb953899aef2ba3943818d6b9482724:DateNightApp/DateNightApp.csproj
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
