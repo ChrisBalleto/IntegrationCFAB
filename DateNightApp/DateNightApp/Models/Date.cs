@@ -14,10 +14,13 @@ namespace DateNightApp.Models
 
         public int UserId { get; set; }
 
+        [Display(Name = "Are they are Chatty")]
         public bool IsChatty { get; set; }
 
+        [Display(Name = "Are they are Active")]
         public bool IsActive { get; set; }
 
+        [Display(Name = "Are they are Artsy")]
         public bool IsArtsy { get; set; }
 
         public Restaurant Restaurant { get; set; }
