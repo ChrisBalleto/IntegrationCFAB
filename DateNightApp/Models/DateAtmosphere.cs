@@ -5,12 +5,10 @@ using System.Web;
 
 namespace DateNightApp.Models
 {
-    public class Restaurant
+    public class DateAtmosphere
     {
         public int Id { get; set; }
 
-        public string RestaurantType { get; set; }
-
-        public string BeforeAfterEating { get; set; }
+        public string DateAtmosphereType { get; set; }
     }
 }

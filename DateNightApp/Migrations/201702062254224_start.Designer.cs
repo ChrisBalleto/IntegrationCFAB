@@ -13,7 +13,7 @@ namespace DateNightApp.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201702061612191_start"; }
+            get { return "201702062254224_start"; }
         }
         
         string IMigrationMetadata.Source
