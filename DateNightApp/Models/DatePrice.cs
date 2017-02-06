@@ -5,10 +5,10 @@ using System.Web;
 
 namespace DateNightApp.Models
 {
-    public class DateAtmosphere
+    public class DatePrice
     {
         public int Id { get; set; }
 
-        public string DateAtmosphereType { get; set; }
+        public string DatePriceRange { get; set; }
     }
 }

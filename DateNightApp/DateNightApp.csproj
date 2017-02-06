@@ -188,10 +188,30 @@
     <Compile Include="Migrations\201702062254224_start.Designer.cs">
       <DependentUpon>201702062254224_start.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702062307190_seedRestuarantTypes.cs" />
+    <Compile Include="Migrations\201702062307190_seedRestuarantTypes.Designer.cs">
+      <DependentUpon>201702062307190_seedRestuarantTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702062320069_moredata.cs" />
+    <Compile Include="Migrations\201702062320069_moredata.Designer.cs">
+      <DependentUpon>201702062320069_moredata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702062331257_deletedAtmospherAddedCost.cs" />
+    <Compile Include="Migrations\201702062331257_deletedAtmospherAddedCost.Designer.cs">
+      <DependentUpon>201702062331257_deletedAtmospherAddedCost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702062331575_seedDatePrice.cs" />
+    <Compile Include="Migrations\201702062331575_seedDatePrice.Designer.cs">
+      <DependentUpon>201702062331575_seedDatePrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702062338126_seedDateTimeOfDay.cs" />
+    <Compile Include="Migrations\201702062338126_seedDateTimeOfDay.Designer.cs">
+      <DependentUpon>201702062338126_seedDateTimeOfDay.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Date.cs" />
-    <Compile Include="Models\DateAtmosphere.cs" />
+    <Compile Include="Models\DatePrice.cs" />
     <Compile Include="Models\DateTimeOfDay.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -270,6 +290,21 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201702062254224_start.resx">
       <DependentUpon>201702062254224_start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702062307190_seedRestuarantTypes.resx">
+      <DependentUpon>201702062307190_seedRestuarantTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702062320069_moredata.resx">
+      <DependentUpon>201702062320069_moredata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702062331257_deletedAtmospherAddedCost.resx">
+      <DependentUpon>201702062331257_deletedAtmospherAddedCost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702062331575_seedDatePrice.resx">
+      <DependentUpon>201702062331575_seedDatePrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702062338126_seedDateTimeOfDay.resx">
+      <DependentUpon>201702062338126_seedDateTimeOfDay.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

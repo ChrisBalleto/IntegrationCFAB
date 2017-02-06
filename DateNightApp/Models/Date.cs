@@ -29,11 +29,13 @@ namespace DateNightApp.Models
 
         public string Keyword { get; set; }
 
-        public DateAtmosphere DateAtmosphere { get; set; }
-
-        public int DateAtmosphereId { get; set; }
-
         public DateTimeOfDay DateTimeOfDay { get; set; }
+
+        public int DateTimeOfDayId { get; set; }
+
+        public DatePrice DatePrice { get; set; }
+
+        public int DatePriceId { get; set; }
 
 
     }

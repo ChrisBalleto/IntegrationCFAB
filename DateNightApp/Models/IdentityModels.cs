@@ -20,7 +20,7 @@ namespace DateNightApp.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        public DbSet<DateAtmosphere> DateAtmospheres { get; set; }
+        public DbSet<DatePrice> DatePrices { get; set; }
         public DbSet<DateTimeOfDay> DateTimeOfDays { get; set; }
         public DbSet<RestaurantType> RestaurantTypes { get; set; }
         public DbSet<Date> Dates { get; set; }
