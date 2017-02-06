@@ -20,6 +20,8 @@ namespace DateNightApp.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<Date> Dates { get; set; }
+        public DbSet<Restaurant> Restaurants { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
