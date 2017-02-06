@@ -8,6 +8,56 @@ namespace DateNightApp.Migrations
         public override void Up()
         {
             CreateTable(
+                "dbo.DateAtmospheres",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        DateAtmosphereType = c.String(),
+                    })
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
+                "dbo.Dates",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        DayOfDate = c.DateTime(nullable: false),
+                        UserId = c.Int(nullable: false),
+                        IsChatty = c.Boolean(nullable: false),
+                        IsActive = c.Boolean(nullable: false),
+                        IsArtsy = c.Boolean(nullable: false),
+                        RestaurantTypeId = c.Int(nullable: false),
+                        Keyword = c.String(),
+                        DateAtmosphereId = c.Int(nullable: false),
+                        DateTimeOfDay_Id = c.Int(),
+                    })
+                .PrimaryKey(t => t.Id)
+                .ForeignKey("dbo.DateAtmospheres", t => t.DateAtmosphereId, cascadeDelete: true)
+                .ForeignKey("dbo.DateTimeOfDays", t => t.DateTimeOfDay_Id)
+                .ForeignKey("dbo.RestaurantTypes", t => t.RestaurantTypeId, cascadeDelete: true)
+                .Index(t => t.RestaurantTypeId)
+                .Index(t => t.DateAtmosphereId)
+                .Index(t => t.DateTimeOfDay_Id);
+            
+            CreateTable(
+                "dbo.DateTimeOfDays",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        DateTimeOfDayType = c.String(),
+                    })
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
+                "dbo.RestaurantTypes",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        RestaurantTypeName = c.String(),
+                    })
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
                 "dbo.AspNetRoles",
                 c => new
                     {
@@ -83,17 +133,27 @@ namespace DateNightApp.Migrations
             DropForeignKey("dbo.AspNetUserLogins", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserClaims", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserRoles", "RoleId", "dbo.AspNetRoles");
+            DropForeignKey("dbo.Dates", "RestaurantTypeId", "dbo.RestaurantTypes");
+            DropForeignKey("dbo.Dates", "DateTimeOfDay_Id", "dbo.DateTimeOfDays");
+            DropForeignKey("dbo.Dates", "DateAtmosphereId", "dbo.DateAtmospheres");
             DropIndex("dbo.AspNetUserLogins", new[] { "UserId" });
             DropIndex("dbo.AspNetUserClaims", new[] { "UserId" });
             DropIndex("dbo.AspNetUsers", "UserNameIndex");
             DropIndex("dbo.AspNetUserRoles", new[] { "RoleId" });
             DropIndex("dbo.AspNetUserRoles", new[] { "UserId" });
             DropIndex("dbo.AspNetRoles", "RoleNameIndex");
+            DropIndex("dbo.Dates", new[] { "DateTimeOfDay_Id" });
+            DropIndex("dbo.Dates", new[] { "DateAtmosphereId" });
+            DropIndex("dbo.Dates", new[] { "RestaurantTypeId" });
             DropTable("dbo.AspNetUserLogins");
             DropTable("dbo.AspNetUserClaims");
             DropTable("dbo.AspNetUsers");
             DropTable("dbo.AspNetUserRoles");
             DropTable("dbo.AspNetRoles");
+            DropTable("dbo.RestaurantTypes");
+            DropTable("dbo.DateTimeOfDays");
+            DropTable("dbo.Dates");
+            DropTable("dbo.DateAtmospheres");
         }
     }
 }
