@@ -9,7 +9,16 @@ namespace DateNightApp.Controllers
 {
     public class DateController : Controller
     {
-        private ApplicationDbContext db = new ApplicationDbContext();
+        private ApplicationDbContext _context;
+        public DateController()
+        {
+            _context = new ApplicationDbContext();
+
+        }
+        protected override void Dispose(bool disposing)
+        {
+            _context.Dispose();
+        }
         // GET: Date
         public ActionResult Index()  //we might want to chance index to something else. This currently this will be called when date/index is called
         {
