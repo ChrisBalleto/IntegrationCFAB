@@ -23,9 +23,18 @@ namespace DateNightApp.Models
         [Display(Name = "Are they are Artsy")]
         public bool IsArtsy { get; set; }
 
-        public Restaurant Restaurant { get; set; }
+        public RestaurantType RestaurantType { get; set; }
 
-        public int RestaurantId { get; set; }
+        public int RestaurantTypeId { get; set; }
+
+        public string Keyword { get; set; }
+
+        public DateAtmosphere DateAtmosphere { get; set; }
+
+        public int DateAtmosphereId { get; set; }
+
+        public DateTimeOfDay DateTimeOfDay { get; set; }
+
 
     }
 }
